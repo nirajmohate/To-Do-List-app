@@ -1,0 +1,89 @@
+/* Base Styles */
+body {
+    background-color: rgb(90, 176, 247);
+    margin: 0;
+    font-family: Arial, sans-serif; /* Improved font setting */
+}
+
+#todolist {
+    list-style-type: lower-roman;
+}
+
+#container {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box; /* Helps manage padding and borders */
+}
+
+h1 {
+    text-align: center; /* Better than padding for centering */
+}
+
+#add, #edit, #delete {
+    border-radius: 3px;
+    border: none;
+    padding: 5px 10px; /* Consistent padding */
+    cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+#add {
+    background-color: rgb(8, 121, 235);
+    color: white;
+}
+
+#add:hover {
+    background-color: rgb(1, 78, 11);
+}
+
+#edit:hover {
+    color: green;
+}
+
+#delete:hover {
+    color: red;
+}
+
+p {
+    display: inline;
+    margin-left: 10px;
+}
+
+#input {
+    width: 90%; /* Responsive width */
+    height: 30px;
+    border-radius: 3px;
+    display: block; /* Makes it easier to manage on mobile */
+    margin: 0 auto; /* Centers the input */
+}
+
+#add {
+    width: 90%; /* Responsive width */
+    height: 30px;
+    display: block; /* Aligns with input width */
+    margin: 10px auto 0 auto; /* Centering the button */
+}
+
+/* Media Queries */
+@media (min-width: 768px) { /* For tablets and desktops */
+    #container {
+        margin: 50px auto; /* Centered layout with auto side margins */
+        width: 50%; /* Fixed width for larger screens */
+        padding-bottom: 50px;
+    }
+
+    #input, #add {
+        width: 50%; /* Adjusts width in relation to container */
+    }
+}
+
+@media (min-width: 1024px) { /* For desktops */
+    h1 {
+        font-size: 2em; /* Larger text for desktop */
+    }
+
+    #container {
+        width: 40%; /* Narrower for larger screens */
+    }
+}
